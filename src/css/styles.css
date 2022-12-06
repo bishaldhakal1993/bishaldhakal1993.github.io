@@ -1,14 +1,64 @@
+.col-left {
+  flex: 75%; }
+
+.col-right {
+  flex: 25%; }
+
+.margin-bottom-extra-small {
+  margin-bottom: 5px; }
+
+.row {
+  margin: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px groove rgba(96, 102, 105, 0.5); }
+
 .category {
   color: #0059bf;
-  font-size: 14px;
+  font-size: 18px;
   font-family: Verdana, sans-serif; }
 
 .title {
   color: #000000;
-  font-size: 24px;
+  font-size: 31px;
   font-family: Verdana, sans-serif; }
 
 .description {
   color: #606669;
-  font-size: 16px;
+  font-size: 19px;
   font-family: Garamond, serif; }
+
+.thumbnail {
+  border-radius: 1%;
+  max-width: 316px;
+  width: 100%;
+  height: auto; }
+
+.thumbnail-container {
+  text-align: right; }
+
+.title-link {
+  text-decoration: none;
+  color: inherit; }
+
+.title-link:hover {
+  text-decoration: underline; }
+
+@media only screen and (max-width: 1280px) {
+  .row {
+    flex-direction: row; }
+  .col-left,
+  .col-right {
+    flex: 50%; } }
+
+@media only screen and (max-width: 576px) {
+  .row {
+    flex-direction: column; }
+  .col-left,
+  .col-right {
+    flex: 100%; }
+  .thumbnail-container {
+    margin-top: 10px;
+    text-align: left; } }

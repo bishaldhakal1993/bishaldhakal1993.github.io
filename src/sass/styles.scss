@@ -15,20 +15,92 @@ $font-description-large: 19px;
 $font-title-small: 24px;
 $font-title-large: 31px;
 
+// Screen Size.
+$screen-small: 576px;
+$screen-medium: 1280px;
+
+.col-left {
+    flex: 75%;
+}
+
+.col-right {
+    flex: 25%;
+}
+
+.margin-bottom-extra-small {
+    margin-bottom: 5px;
+}
+
+.row {
+    margin: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px groove rgba($description-color, 0.5);
+}
 .category {
     color: $category-color;
-    font-size: $font-category-small;
+    font-size: $font-category-large;
     font-family: $font-family-primary;
 }
 
 .title {
     color: $title-color;
-    font-size: $font-title-small;
+    font-size: $font-title-large;
     font-family: $font-family-primary;
 }
 
 .description {
     color: $description-color;
-    font-size: $font-description-small;
+    font-size: $font-description-large;
     font-family: $font-family-secondary;
+}
+.thumbnail {
+    border-radius: 1%;
+    max-width: 316px;
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail-container {
+    text-align: right;
+}
+
+.title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title-link:hover {
+    text-decoration: underline;
+}
+
+// For Medium Screens.
+@media only screen and (max-width: $screen-medium) {
+    .row {
+        flex-direction: row;
+    }
+
+    .col-left,
+    .col-right {
+        flex: 50%;
+    }
+}
+
+// For Small Screens.
+@media only screen and (max-width: $screen-small) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-left,
+    .col-right {
+        flex: 100%;
+    }
+
+    .thumbnail-container {
+        margin-top: 10px;
+        text-align: left;
+    }
 }
