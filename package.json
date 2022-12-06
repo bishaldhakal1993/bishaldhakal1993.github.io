@@ -1,0 +1,16 @@
+{
+  "name": "newstest",
+  "version": "1.0.0",
+  "description": "Test solution for Newscorp.",
+  "main": "public/index.html",
+  "scripts": {
+    "css": "node-sass --include-path scss src/sass/styles.scss src/css/styles.css",
+    "watch": "nodemon -e scss -x 'npm run css'"
+  },
+  "author": "Bishal Dhakal bishaldhakal@visualdomain.com.au www.linkedin.com/in/bdhakal1993",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

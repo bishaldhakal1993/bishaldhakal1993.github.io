@@ -1,0 +1,34 @@
+// Text Color.
+$category-color: #0059bf;
+$title-color: #000000;
+$description-color: #606669;
+
+// Font Family.
+$font-family-primary: Verdana, sans-serif;
+$font-family-secondary: Garamond, serif;
+
+// Font Size.
+$font-category-small: 14px;
+$font-description-small: 16px;
+$font-category-large: 18px;
+$font-description-large: 19px;
+$font-title-small: 24px;
+$font-title-large: 31px;
+
+.category {
+    color: $category-color;
+    font-size: $font-category-small;
+    font-family: $font-family-primary;
+}
+
+.title {
+    color: $title-color;
+    font-size: $font-title-small;
+    font-family: $font-family-primary;
+}
+
+.description {
+    color: $description-color;
+    font-size: $font-description-small;
+    font-family: $font-family-secondary;
+}
